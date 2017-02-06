@@ -5,8 +5,8 @@ This project was developed to give everyone the ability to download music from Y
 
 **Batch**:
 ```batch
-  $ cd path/to/ts3_dir
-  $ wget https://raw.githubusercontent.com/Lettly/ts3-anticrash/master/ts3-anticrash.sh
+  Download zip file frome
+  $ wget https://raw.githubusercontent.com/Lettly/ts3-anticrash/master/ts3-anticrash.sh
   $ chmod 777 ts3-anticrash.sh
 ```
 
