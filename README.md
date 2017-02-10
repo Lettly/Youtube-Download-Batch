@@ -19,7 +19,7 @@ Es: Use: "C:\Users\user\Documents"; Do not use: "C:\Users\giuse\Documents\"
 
 
 **Setting for DownloadCopy.txt:**<br />
-If activated it makes a copy of the downloaded file into the caretella: "Lib/Download" over the destination folder you.<br />
+If activated it makes a copy of the downloaded file into the folder: "Lib/Download".<br />
 Es: Use: "Y" or "y" or "N" or "n"; Do not use: "yes" or "no"<br />
 
 ![](https://raw.githubusercontent.com/Lettly/Wiki-file/master/youtube-download-batch/Yt-dl.gif)
