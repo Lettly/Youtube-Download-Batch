@@ -20,7 +20,6 @@ Es: Use: "C:\Users\user\Documents"; Do not use: "C:\Users\giuse\Documents\"
 ## Usage
 - Run "Youtube-download-batch.bat"<br />
 - Paste the YouTube video link (with the right mouse button) and press enter.<br />
-- 
 ![](https://raw.githubusercontent.com/Lettly/Wiki-file/master/youtube-download-batch/Yt-dl.gif)
 
 **Setting for DownloadCopy.txt:**<br />
