@@ -11,14 +11,14 @@ Via **Browser**:
 ## Setting
 Go to the folder "Setting"
 
-Setting for **DirToSave.txt**:<br />
+ **Setting for DirToSave.txt:**<br />
 It serves to set the folder where the video will be downloaded (in mp3 format).<br />
 Do not use "\" at the end.<br />
 Es: Use: "C:\Users\user\Documents"; Do not use: "C:\Users\giuse\Documents\"
 ![](http://image.prntscr.com/image/fe9f8845a5d94e2f87a828c4410ae19f.png)<br /><br />
 
 
-Setting for **DownloadCopy.txt**:<br />
+**Setting for DownloadCopy.txt:**<br />
 If activated it makes a copy of the downloaded file into the caretella: "Lib/Download" over the destination folder you.<br />
 Es: Use: "Y" or "y" or "N" or "n"; Do not use: "yes" or "no"<br />
 
