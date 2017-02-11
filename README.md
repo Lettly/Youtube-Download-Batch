@@ -16,12 +16,14 @@ It serves to set the folder where the video will be downloaded (in mp3 format).<
 Do not use "\" at the end.<br />
 Es: Use: "C:\Users\user\Documents"; Do not use: "C:\Users\user\Documents\"<br /><br />
 ![](http://image.prntscr.com/image/fe9f8845a5d94e2f87a828c4410ae19f.png)<br /><br />
+**Setting for DownloadCopy.txt:**<br />
+If activated it makes a copy of the downloaded file into the folder: "Lib/Download".<br />
+Es: Use: "Y" or "y" or "N" or "n"; Do not use: "yes" or "no"<br />
+
+
 
 ## Usage
 - Run "Youtube-download-batch.bat"<br />
 - Paste the YouTube video link (with the right mouse button) and press enter.<br />
 ![](https://raw.githubusercontent.com/Lettly/Wiki-file/master/youtube-download-batch/Yt-dl.gif)
 
-**Setting for DownloadCopy.txt:**<br />
-If activated it makes a copy of the downloaded file into the folder: "Lib/Download".<br />
-Es: Use: "Y" or "y" or "N" or "n"; Do not use: "yes" or "no"<br />
