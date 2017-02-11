@@ -11,7 +11,7 @@ Via **Browser**:
 ## Usage
 - Run "Youtube-download-batch.bat"<br />
 - Paste the YouTube video link (with the right mouse button) and press enter.<br />
-- Wait until it shows "Press any key to continue...". Then the file will be downloaded completely. I recommend we must not close the prgramma until it shows "Press any key to continue..." otherwise the download will be corrupted.
+- Wait until "Press any key to continue. . ." appears. This will mean the file has been downloaded. Make sure to not close the program until "Press any key to continue. . ." appears, or the download will get corrupted.
 ![](https://raw.githubusercontent.com/Lettly/Wiki-file/master/youtube-download-batch/Yt-dl.gif)
 
 
