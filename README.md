@@ -8,6 +8,13 @@ Via **Browser**:
 - Go into the [settings](https://github.com/Lettly/Youtube-Download-Batch#setting) folder and configure to your liking.
 - Run "Youtube-download-batch.bat"<br />
 
+## Usage
+- Run "Youtube-download-batch.bat"<br />
+- Paste the YouTube video link (with the right mouse button) and press enter.<br />
+- Wait until it shows "Press any key to continue...". Then the file will be downloaded completely. I recommend we must not close the prgramma until it shows "Press any key to continue..." otherwise the download will be corrupted.
+![](https://raw.githubusercontent.com/Lettly/Wiki-file/master/youtube-download-batch/Yt-dl.gif)
+
+
 ## Setting
 Go to the folder "Setting"
 
@@ -21,10 +28,4 @@ If activated it makes a copy of the downloaded file into the folder: "Lib/Downlo
 Es: Use: "Y" or "y" or "N" or "n"; Do not use: "yes" or "no"<br />
 
 
-
-## Usage
-- Run "Youtube-download-batch.bat"<br />
-- Paste the YouTube video link (with the right mouse button) and press enter.<br />
-- Wait until it shows "Press any key to continue...". Then the file will be downloaded completely. I recommend we must not close the prgramma until it shows "Press any key to continue..." otherwise the download will be corrupted.
-![](https://raw.githubusercontent.com/Lettly/Wiki-file/master/youtube-download-batch/Yt-dl.gif)
 
