@@ -5,7 +5,7 @@
 Via **Browser**: 
 - Simply download the [latest](https://github.com/Lettly/youtube-download-batch/archive/master.zip) release or clone this repo.<br />
 - Extract the folder contained in the zip file.<br />
-- Go into the [settings](https://github.com/Lettly/Youtube-Download-Batch#setting) folder and configure to your liking.
+- Go into the [settings](#setting) folder and configure to your liking.
 - Run "Youtube-download-batch.bat"<br />
 
 ## Usage
