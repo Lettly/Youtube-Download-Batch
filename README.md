@@ -11,15 +11,15 @@ Via **Browser**:
 ## Usage for audio
 - Run "Youtube-download-batch.bat"<br />
 - Paste the YouTube video link (with the right mouse button) and press enter.<br />
-- Wait until "Press any key to continue. . ." appears. This will mean the file has been downloaded. Make sure to not close the program until "Press any key to continue. . ." appears, or the download will get corrupted.
+- Wait until "Press any key to continue. . ." appears. This will mean the file has been downloaded. Make sure to not close the program until "Press any key to continue. . ." appears, or the download will get corrupted.<br /><br />
 ![](https://raw.githubusercontent.com/Lettly/Wiki-file/master/youtube-download-batch/Yt-dl.gif) <br /><br />
 
 ## Usage for video
 - Run "Youtube-download-batch.bat"<br />
 - Paste the YouTube video link (with the right mouse button) and press enter.<br />
-- Choose the video quality from the list that appears, by entering the number (As shown in pictures)
-- ![](http://image.prntscr.com/image/112a4fd9a9ed4421a91ef7033b9b52ed.png)<br />
-- Wait until "Press any key to continue. . ." appears. This will mean the file has been downloaded. Make sure to not close the program until "Press any key to continue. . ." appears, or the download will get corrupted.
+- Choose the video quality from the list that appears, by entering the number (As shown in pictures)<br />
+![](http://image.prntscr.com/image/112a4fd9a9ed4421a91ef7033b9b52ed.png)<br />
+- Wait until "Press any key to continue. . ." appears. This will mean the file has been downloaded. Make sure to not close the program until "Press any key to continue. . ." appears, or the download will get corrupted.<br /><br />
 ![](https://raw.githubusercontent.com/Lettly/Wiki-file/master/youtube-download-batch/Yt-dl-video.gif)
 
 
