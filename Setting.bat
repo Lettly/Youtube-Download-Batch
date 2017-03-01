@@ -4,7 +4,6 @@ cd Setting
 
 for /f "tokens=* delims=" %%x in (DirToSave.txt) do set dir=%%x
 set /p dir1="Select the folder where you want to download the file [%dir%]: "
-echo.
 IF [%dir1%] == [] goto Dirend
 
 :dirset
@@ -24,7 +23,6 @@ goto DCn
 
 :DCy
 set /p dow1=Want to make a copy of the downloaded file in the folder: "Lib/Download" [Y/n]: 
-echo.
 IF [%dow1%] == [] goto DCend
 IF [%dow1%] == [y] goto DCset
 IF [%dow1%] == [Y] goto DCset
@@ -34,7 +32,6 @@ goto ErrSetDC
 goto DCend
 :DCn
 set /p dow1=Want to make a copy of the downloaded file in the folder: "Lib/Download" [y/N]: 
-echo.
 IF [%dow1%] == [] goto DCend
 IF [%dow1%] == [y] goto DCset
 IF [%dow1%] == [Y] goto DCset
@@ -65,7 +62,6 @@ goto MP3
 
 :MP4
 set /p MP1=You can download video or audio files [VIDEO/audio]: 
-echo.
 IF [%mp1%] == [] goto MPend
 if [%mp1%] == [mp4] goto MPset
 if [%mp1%] == [Mp4] goto MPset
@@ -84,7 +80,6 @@ if [%mp1%] == [AUDIO] goto MPset
 goto ErrSetMP
 :MP3
 set /p MP1=You can download video or audio files [video/AUDIO]: 
-echo.
 IF [%mp1%] == [] goto MPend
 if [%mp1%] == [mp4] goto MPset
 if [%mp1%] == [Mp4] goto MPset
