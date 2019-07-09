@@ -14,7 +14,7 @@ do not: 	C:\Users\giuse\Documents\
 
 ---For DownloadCopy.txt
 
-If activated it makes a copy of the downloaded file into the caretella: "Lib/Download" over the destination folder you.
+If activated it makes a copy of the downloaded file into the folder: "Lib/Download" over the destination folder you.
 
 es.
 
