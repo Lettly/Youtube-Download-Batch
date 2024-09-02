@@ -3,7 +3,7 @@
 echo Check for updates 
 echo.
 cd Lib
-youtube-dl -U
+yt-dlp -U
 echo.
 echo Successful update!
 echo.
