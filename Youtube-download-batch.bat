@@ -24,11 +24,25 @@ set /p id="Enter video or playlist URL: "
 echo.
 yt-dlp -F %id% > formats.txt
 
+rem Create formatted formats.txt with additional details
+(
+    echo Format Code^|Type^|Resolution^|Description
+    for /f "tokens=1,2,3,* delims= " %%A in (formats.txt) do (
+        if "%%A" neq "format" (
+            rem Extract format type and resolution from the description
+            set "desc=%%D"
+            if "%%B"=="video" (
+                echo %%A^|Video^|%%C^|%desc%
+            ) else if "%%B"=="audio" (
+                echo %%A^|Audio^|N/A^|%desc%
+            )
+        )
+    )
+) > formatted_formats.txt
+
 rem Display available formats
 echo Available formats:
-for /f "tokens=1,2 delims= " %%A in (formats.txt) do (
-    if "%%A" neq "format" echo %%A - %%B
-)
+type formatted_formats.txt
 echo.
 
 rem Prompt user to select a format
@@ -50,11 +64,25 @@ set /p id="Enter video or playlist URL: "
 echo.
 yt-dlp -F %id% > formats.txt
 
+rem Create formatted formats.txt with additional details
+(
+    echo Format Code^|Type^|Resolution^|Description
+    for /f "tokens=1,2,3,* delims= " %%A in (formats.txt) do (
+        if "%%A" neq "format" (
+            rem Extract format type and resolution from the description
+            set "desc=%%D"
+            if "%%B"=="video" (
+                echo %%A^|Video^|%%C^|%desc%
+            ) else if "%%B"=="audio" (
+                echo %%A^|Audio^|N/A^|%desc%
+            )
+        )
+    )
+) > formatted_formats.txt
+
 rem Display available formats
 echo Available formats:
-for /f "tokens=1,2 delims= " %%A in (formats.txt) do (
-    if "%%A" neq "format" echo %%A - %%B
-)
+type formatted_formats.txt
 echo.
 
 rem Prompt user to select a format
