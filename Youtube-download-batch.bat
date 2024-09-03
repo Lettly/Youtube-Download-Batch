@@ -27,7 +27,10 @@ cd ..
 cd Lib
 set /p id="Enter video or playlist URL: "
 echo.
-yt-dlp -o %dir%\%%(playlist)s\%%(title)s.%%(ext)s %id%
+yt-dlp -F %id%
+echo.
+set /p format="Enter the format code you want to download (e.g., 22, 140): "
+yt-dlp -f %format% -o %dir%\%%(title)s.%%(ext)s %id%
 echo.
 pause
 cd ..
@@ -36,7 +39,7 @@ goto start
 :start2
 cd ..
 cd Lib
-set /p id="Enter video url: "
+set /p id="Enter video or playlist URL: "
 yt-dlp --extract-audio --audio-format "mp3" --audio-quality 0 --youtube-skip-dash-manifest -o Download\%%(title)s.%%(ext)s %id%
 yt-dlp --extract-audio --audio-format "mp3" --audio-quality 0 --youtube-skip-dash-manifest -o %dir%\%%(title)s.%%(ext)s %id%
 pause
@@ -47,7 +50,7 @@ goto start
 cd ..
 cd Lib
 set /p id="Enter video or playlist URL: "
-yt-dlp --extract-audio --audio-format "mp3" --audio-quality 0 -o %dir%\%%(playlist)s\%%(title)s.%%(ext)s %id%
+yt-dlp --extract-audio --audio-format "mp3" --audio-quality 0 --youtube-skip-dash-manifest -o %dir%\%%(title)s.%%(ext)s %id%
 pause
 cd ..
 goto start
