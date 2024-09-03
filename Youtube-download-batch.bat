@@ -1,4 +1,5 @@
 @echo off
+setlocal enabledelayedexpansion
 
 :start
 cls
@@ -27,15 +28,14 @@ yt-dlp -F %id% > formats.txt
 rem Display available formats with additional details
 echo Available formats:
 echo.
-echo Format Code^|Type^|Resolution^|Description
-for /f "tokens=1,2,3,* delims= " %%A in (formats.txt) do (
-    if "%%A" neq "format" (
-        set "desc=%%D"
-        if "%%B"=="video" (
-            echo %%A^|Video^|%%C^|%desc%
-        ) else if "%%B"=="audio" (
-            echo %%A^|Audio^|N/A^|%desc%
-        )
+echo Format Code | Type  | Resolution | Description
+for /f "tokens=1,2,3,* delims=|" %%A in ('findstr /r /v "^format" formats.txt') do (
+    set "desc=%%D"
+    set "desc=!desc:~1!"  rem Remove leading space in description if necessary
+    if "%%B"=="video" (
+        echo %%A | Video | %%C | !desc!
+    ) else if "%%B"=="audio" (
+        echo %%A | Audio | N/A | !desc!
     )
 )
 echo.
@@ -62,15 +62,14 @@ yt-dlp -F %id% > formats.txt
 rem Display available formats with additional details
 echo Available formats:
 echo.
-echo Format Code^|Type^|Resolution^|Description
-for /f "tokens=1,2,3,* delims= " %%A in (formats.txt) do (
-    if "%%A" neq "format" (
-        set "desc=%%D"
-        if "%%B"=="video" (
-            echo %%A^|Video^|%%C^|%desc%
-        ) else if "%%B"=="audio" (
-            echo %%A^|Audio^|N/A^|%desc%
-        )
+echo Format Code | Type  | Resolution | Description
+for /f "tokens=1,2,3,* delims=|" %%A in ('findstr /r /v "^format" formats.txt') do (
+    set "desc=%%D"
+    set "desc=!desc:~1!"  rem Remove leading space in description if necessary
+    if "%%B"=="video" (
+        echo %%A | Video | %%C | !desc!
+    ) else if "%%B"=="audio" (
+        echo %%A | Audio | N/A | !desc!
     )
 )
 echo.
