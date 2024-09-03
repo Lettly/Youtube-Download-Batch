@@ -23,13 +23,16 @@ cd ..
 cd Lib
 set /p id="Enter video or playlist URL: "
 echo.
-yt-dlp -F %id% > formats.txt
+
+rem Fetch format information and save to a log file for debugging
+yt-dlp -F %id% > formats.txt 2> error.log
+if errorlevel 1 goto errfetch
 
 rem Display available formats with additional details
 echo Available formats:
 echo.
 echo Format Code | Type  | Resolution | Description
-for /f "tokens=1,2,3,* delims=|" %%A in ('findstr /r /v "^format" formats.txt') do (
+for /f "tokens=1,2,3,* delims= " %%A in ('findstr /r /v "^format" formats.txt') do (
     set "desc=%%D"
     set "desc=!desc:~1!"  rem Remove leading space in description if necessary
     if "%%B"=="video" (
@@ -47,6 +50,7 @@ echo.
 rem Download the selected format
 yt-dlp -f %format% -o Download\%%(title)s.%%(ext)s %id%
 yt-dlp -f %format% -o %dir%\%%(title)s.%%(ext)s %id%
+if errorlevel 1 goto errfetch
 pause
 cd ..
 goto start
@@ -57,13 +61,16 @@ cd ..
 cd Lib
 set /p id="Enter video or playlist URL: "
 echo.
-yt-dlp -F %id% > formats.txt
+
+rem Fetch format information and save to a log file for debugging
+yt-dlp -F %id% > formats.txt 2> error.log
+if errorlevel 1 goto errfetch
 
 rem Display available formats with additional details
 echo Available formats:
 echo.
 echo Format Code | Type  | Resolution | Description
-for /f "tokens=1,2,3,* delims=|" %%A in ('findstr /r /v "^format" formats.txt') do (
+for /f "tokens=1,2,3,* delims= " %%A in ('findstr /r /v "^format" formats.txt') do (
     set "desc=%%D"
     set "desc=!desc:~1!"  rem Remove leading space in description if necessary
     if "%%B"=="video" (
@@ -80,8 +87,16 @@ echo.
 
 rem Download the selected format
 yt-dlp -f %format% -o %dir%\%%(title)s.%%(ext)s %id%
+if errorlevel 1 goto errfetch
 pause
 cd ..
+goto start
+
+rem Handle errors during fetch or download
+:errfetch
+echo An error occurred. Please check the error.log file for details.
+echo.
+pause
 goto start
 
 rem Handle error for empty settings
