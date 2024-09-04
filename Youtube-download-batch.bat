@@ -24,7 +24,7 @@ cd Lib
 set /p id="Enter video or playlist URL: "
 echo.
 
-rem Fetch format information and save to a log file for debugging
+rem Fetch format information and display in CLI
 yt-dlp -F %id% > formats.txt 2> error.log
 if errorlevel 1 goto errfetch
 
@@ -36,9 +36,9 @@ for /f "tokens=1,2,3,* delims= " %%A in ('findstr /r /v "^format" formats.txt') 
     set "desc=%%D"
     set "desc=!desc:~1!"  rem Remove leading space in description if necessary
     if "%%B"=="video" (
-        echo %%A | Video | %%C | !desc!
+        echo %%A ^| Video ^| %%C ^| !desc!
     ) else if "%%B"=="audio" (
-        echo %%A | Audio | N/A | !desc!
+        echo %%A ^| Audio ^| N/A ^| !desc!
     )
 )
 echo.
@@ -62,7 +62,7 @@ cd Lib
 set /p id="Enter video or playlist URL: "
 echo.
 
-rem Fetch format information and save to a log file for debugging
+rem Fetch format information and display in CLI
 yt-dlp -F %id% > formats.txt 2> error.log
 if errorlevel 1 goto errfetch
 
@@ -74,9 +74,9 @@ for /f "tokens=1,2,3,* delims= " %%A in ('findstr /r /v "^format" formats.txt') 
     set "desc=%%D"
     set "desc=!desc:~1!"  rem Remove leading space in description if necessary
     if "%%B"=="video" (
-        echo %%A | Video | %%C | !desc!
+        echo %%A ^| Video ^| %%C ^| !desc!
     ) else if "%%B"=="audio" (
-        echo %%A | Audio | N/A | !desc!
+        echo %%A ^| Audio ^| N/A ^| !desc!
     )
 )
 echo.
