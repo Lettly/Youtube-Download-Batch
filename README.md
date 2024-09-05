@@ -25,7 +25,7 @@ Before running the main script, you need to configure the settings.
 
 2. **Configuration Files**:
    - `DirToSave.txt`: Enter the full path where you want the files to be saved.
-   - `DownloadCopy.txt`: Enter `Y` if you want to save a copy of the file to the `Download` folder as well, or `N` if not.
+   - `DownloadCopy.txt`: Enter `Y` if you want to save a copy of the file to the `Lib` folder as well, or `N` if not.
 
 ## Usage
 
@@ -37,7 +37,7 @@ Before running the main script, you need to configure the settings.
    - **Select Format Code**: After fetching format information, enter the format code you want to download.
 
 3. **Download Options**:
-   - If `DownloadCopy.txt` contains `Y`, the script will save the file in both the `Download` folder and the directory specified in `DirToSave.txt`.
+   - If `DownloadCopy.txt` contains `Y`, the script will save the file in both the `Lib` folder and the directory specified in `DirToSave.txt`.
    - If `DownloadCopy.txt` contains `N`, the script will save the file only in the directory specified in `DirToSave.txt`.
 
 ## Error Handling
@@ -54,7 +54,7 @@ Before running the main script, you need to configure the settings.
 2. **Script Execution**:
    - When prompted, enter the URL of the video or playlist.
    - Choose the format code you wish to download.
-   - The script will download the file to both the `Download` folder and `C:\Users\Admin\Downloads`.
+   - The script will download the file to both the `Lib` folder and `C:\Users\Admin\Downloads`.
 
 ## Troubleshooting
 
