@@ -13,7 +13,7 @@ This batch script facilitates downloading video or audio from URLs using `yt-dlp
 
 1. **Settings Folder**:
    - `DirToSave.txt`: Should contain the path where files will be saved. The path should be absolute.
-   - `DownloadCopy.txt`: Should contain `Y` if you want to save a copy of the file to the `Download` folder, or `N` if not.
+   - `DownloadCopy.txt`: Should contain `Y` if you want to save a copy of the file to the `Lib` folder, or `N` if not.
 
 ## Initial Setup
 
