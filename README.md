@@ -1,11 +1,5 @@
 # youtube-download-batch
 
-Sure! Here’s a README file for the batch script you provided:
-
----
-
-# Video and Audio Download Batch Script
-
 ## Overview
 
 This batch script facilitates downloading video or audio from URLs using `yt-dlp`. It reads settings from configuration files and allows you to select formats and destinations for your downloads.
